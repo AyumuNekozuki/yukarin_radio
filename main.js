@@ -4,7 +4,7 @@ function change_nowplaying(title, autor, contentid){
   $('#contentid').text(contentid);
   setTimeout(function(){
     $("#title").addClass("scroll");
-  },15000)
+  },5000)
 }
 
 function set_announce(content){
