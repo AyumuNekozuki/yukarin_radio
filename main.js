@@ -2,9 +2,7 @@ function change_nowplaying(title, autor, contentid){
   $('#title span').text(title);
   $('#autor').text(autor);
   $('#contentid').text(contentid);
-  setTimeout(function(){
-    $("#title").addClass("scroll");
-  },5000)
+  $("#title").addClass("scroll");
 }
 
 function set_announce(content){
@@ -22,12 +20,11 @@ function playmusic(music_title,music_autor,music_id){
 }
 
 function reset(){
-  change_nowplaying("-", "", "");
+  $('#title span').text("-");
+  $('#autor').text("");
+  $('#contentid').text("");
   $("#title").removeClass("scroll");
   hide_announce();
-  setTimeout(function(){
-    $("#title").removeClass("scroll");
-  },15250)
 }
 
 
