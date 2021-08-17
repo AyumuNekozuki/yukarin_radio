@@ -116,7 +116,7 @@ div#footer{
 .scroll {
   margin     : auto;
   width      : 100%;
-  text-align : center;
+  text-align : left;
   overflow   : hidden;
 }
 .scroll span{
